@@ -1,6 +1,6 @@
 export default function userReducer ( state = {
   user : {
-    name : "admin"
+    name : "administrator"
   }
 }, action) {
 

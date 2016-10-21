@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, IndexLink } from "react-router";
+import { Link } from "react-router";
 
 //components
 import App from "grommet/components/App";

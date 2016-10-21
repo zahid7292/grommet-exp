@@ -10,7 +10,6 @@ class Logon extends Component {
 
   _onLogon (fields) {
     console.log("Submit Button Clicked");
-    console.log(fields.username);
     const { username, password } = fields;
     this.props.dispatch(authUser(username, password));
   }
