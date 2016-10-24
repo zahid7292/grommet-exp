@@ -15,16 +15,16 @@ class Logon extends Component {
   }
 
   render () {
-    const { user } = this.props;
+    const { username } = this.props.user;
     return (
       <div>
 
         <LoginForm
-                title="Admin UI Login"
+                title="Admin Login"
                 align="start"
                 onSubmit={this._onLogon.bind(this)}
                 rememberMe={true}
-                defaultValues={{"username": user.name}}
+                defaultValues={{"username": username}}
                 usernameType="text" />
       </div>
     );
@@ -33,7 +33,7 @@ class Logon extends Component {
 
 let select = (store) => {
   return {
-    user: store.user.user
+    user: store.user
   };
 };
 
